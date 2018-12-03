@@ -1,0 +1,32 @@
+/*Nav Menu style*/
+
+%nav-link {
+    color: $menu-font-color;
+    border-bottom-color: $border-color;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+.navbar {
+    background-color: $background-color;
+    box-shadow: 0 0 20px gray;
+    min-height: 70px;
+    min-width: 320px !important;
+    width: auto !important;
+    height: auto !important;
+    font-family: $font-menu;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    .nav-item {
+        margin-left: 0.5em;
+        text-align: center;
+        &:hover {
+            @extend %nav-link;
+        }
+        &.active {
+            @extend %nav-link;
+        }
+    }
+}

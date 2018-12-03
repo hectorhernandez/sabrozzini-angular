@@ -1,0 +1,143 @@
+$background-color: whitesmoke;
+$border-color: #D32A26;
+$menu-font-color: #D32A26;
+$menu-font-color-alt: whitesmoke;
+body {
+    background-color: $background-color;
+}
+
+.btn {
+    color: $menu-font-color;
+    background-color: $background-color;
+    border-color: $border-color;
+    &:hover {
+        background-color: $menu-font-color;
+        color: $menu-font-color-alt;
+    }
+}
+
+.btn-alt {
+    text-align: center;
+    color: $menu-font-color-alt;
+    background-color: $border-color;
+    border-color: $border-color;
+    text-decoration: none;
+    &:hover {
+        background-color: $background-color;
+        color: $menu-font-color;
+        text-decoration: none;
+    }
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+.main-content {
+    background-color: whitesmoke;
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    @include media(">=tablet","<=desktop") {
+        margin-right: 2rem;
+    }
+
+    @include media(">desktop") {
+        margin-right: 0;
+    }
+}
+
+.header-title {
+    padding-bottom: 3%;
+}
+
+.header-landing {
+    background-image: url(../images/header-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    min-height: 200px;
+    min-width: 200px;
+    @include media("<desktop") {
+        height: 320px;
+    }
+    margin-bottom: 1rem;
+}
+
+.header-container {
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @include media("<tablet") {
+        padding-top: 2rem;
+    }
+    p {
+        font-size: 25px;
+        @include media("<desktop") {
+            font-size: 18px;
+            padding: 10px;
+        }
+        border-top: whitesmoke 1px solid;
+        border-bottom: whitesmoke 1px solid;
+        flex-wrap: wrap;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .greetings {
+        font-size: 65px;
+        @include media("<desktop") {
+            font-size: 40px;
+        }
+    }
+}
+
+.image-container {
+    margin: 0 auto;
+    display: table !important;
+    line-height: 0;
+}
+
+.recipe-image {
+    margin-bottom: 2rem;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.sidebar {
+    margin-top: 3rem;
+    padding: 0;
+    font-size: 14px;
+    @include media("<990px") {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.about-section {
+    border-bottom: #D32A26 .250em solid;
+    min-height: 120px;
+    margin-bottom: 1rem;
+    img.border {
+        border: 5px solid #d32a26 !important;
+        width: 100px;
+        height: 100px;
+        min-width: 80px;
+        min-height: 80px;
+        float: left;
+        -webkit-shape-outside: circle();
+        shape-outside: circle();
+        margin-right: 1rem;
+    }
+}
+
+.social-networks {
+    margin-top: 2rem;
+    border-bottom: #D32A26 .250em solid;
+}

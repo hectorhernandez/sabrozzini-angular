@@ -1,0 +1,125 @@
+/* Recipes */
+
+%link-no-style {
+    text-decoration: none;
+    color: black;
+}
+
+%recipe-card-hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.recipes-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    @include media("<=phone") {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @include media(">tablet") {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    a.recipe-link {
+        @extend %link-no-style;
+        &:hover {
+            @extend %link-no-style;
+        }
+    }
+    &.card {
+        border: 2px solid gray;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 15px;
+        max-width: 230px;
+        margin-bottom: 1rem;
+        &:hover {
+            @extend %recipe-card-hover;
+            a {
+                .recipe-body {
+                    @extend %recipe-card-hover;
+                }
+                img.recipe-image-rnd {
+                    @extend %recipe-card-hover;
+                }
+            }
+        }
+    }
+}
+
+.recipe-image-rnd {
+    @include media("<tablet") {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    display: block;
+    border: 5px solid #D32A26;
+    position: relative;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-body {
+    padding-top: 1rem;
+    margin: 0;
+    p.card-text {
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        margin-bottom: 1rem;
+    }
+}
+
+.recipe-main-container {
+    padding: 1rem 3rem;
+    @include media("<=425px") {
+        padding: 1rem;
+    }
+}
+
+.container-print {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 3px solid #D32A26;
+    padding: 1rem;
+}
+
+.times-container {
+    display: grid;
+    grid-template-columns: 2rem auto 4rem;
+    grid-template-rows: 2rem 2rem 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 400px;
+}
+
+.grid-item {
+    &.cell-text {
+        padding-top: 4px;
+        text-align: left;
+        padding-left: 3px;
+    }
+}
+
+.recipe-thumbnail{
+    margin-left: auto;
+    margin-right: auto;
+}
