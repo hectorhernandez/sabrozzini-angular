@@ -2,9 +2,10 @@ $background-color: whitesmoke;
 $border-color: #D32A26;
 $menu-font-color: #D32A26;
 $menu-font-color-alt: whitesmoke;
-body {
+body, header {
     background-color: $background-color;
 }
+
 
 .btn {
     color: $menu-font-color;
