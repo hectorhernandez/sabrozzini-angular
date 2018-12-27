@@ -1,0 +1,166 @@
+/*--- Padding all ---*/
+
+@for $i from 0 through 300 {
+    .padding-#{$i}px {
+        padding: 0px + $i;
+    }
+}
+
+/*--- Padding top & bottom ---*/
+
+@for $i from 0 through 300 {
+    .padding-tb-#{$i}px {
+        padding-top: 0px + $i;
+        padding-bottom: 0px + $i;
+    }
+}
+
+/*--- Padding top ---*/
+
+@for $i from 0 through 300 {
+    .padding-top-#{$i}px {
+        padding-top: 0px + $i;
+    }
+}
+
+/*--- Padding bottom ---*/
+
+@for $i from 0 through 300 {
+    .padding-bottom-#{$i}px {
+        padding-bottom: 0px + $i;
+    }
+}
+
+/*--- Padding Right & Left ---*/
+
+@for $i from 0 through 300 {
+    .padding-lr-#{$i}px {
+        padding-left: 0px + $i;
+        padding-right: 0px + $i;
+    }
+}
+
+/*--- Padding Left ---*/
+
+@for $i from 0 through 300 {
+    .padding-left-#{$i}px {
+        padding-left: 0px + $i;
+    }
+}
+
+/*--- Padding right ---*/
+
+@for $i from 0 through 300 {
+    .padding-right-#{$i}px {
+        padding-right: 0px + $i;
+    }
+}
+
+/*--- Padding Top N ---*/
+
+@for $i from 0 through 100 {
+    .padding-top-n-#{$i} {
+        padding-top: 0% + $i
+    }
+}
+
+
+
+/*--- Margin top & bottom ---*/
+
+@for $i from 0 through 250 {
+    .margin-tb-#{$i}px {
+        margin-top: 0px + $i;
+        margin-bottom: 0px + $i;
+    }
+}
+
+/*--- Margin top ---*/
+
+@for $i from 0 through 250 {
+    .margin-top-#{$i}px {
+        margin-top: 0px + $i;
+    }
+}
+
+/*--- Margin bottom ---*/
+
+@for $i from 0 through 100 {
+    .margin-bottom-#{$i}px {
+        margin-bottom: 0px + $i;
+    }
+}
+
+/*--- Margin Right & Left ---*/
+
+@for $i from 0 through 100 {
+    .margin-lr-#{$i}px {
+        margin-left: 0px + $i;
+        margin-right: 0px + $i;
+    }
+}
+
+/*--- Margin Left ---*/
+
+@for $i from 0 through 100 {
+    .margin-left-#{$i}px {
+        margin-left: 0px + $i;
+    }
+}
+
+/*--- Margin right ---*/
+
+@for $i from 0 through 100 {
+    .margin-right-#{$i}px {
+        margin-right: 0px + $i;
+    }
+}
+
+/*--- Margin all ---*/
+
+@for $i from 0 through 100 {
+    .margin-#{$i}px {
+        margin: 0px + $i;
+    }
+}
+
+
+/*-- Border Top ---*/
+
+@for $i from 0 through 10 {
+    .border-top-#{$i} {
+        border-top: solid 0px + $i;
+    }
+}
+
+/*-- Border Bottom ---*/
+
+@for $i from 0 through 10 {
+    .border-bottom-#{$i} {
+        border-bottom: solid 0px + $i;
+    }
+}
+
+/*-- Border Right ---*/
+
+@for $i from 0 through 10 {
+    .border-right-#{$i} {
+        border-right: solid 0px + $i;
+    }
+}
+
+/*-- Border Left ---*/
+
+@for $i from 0 through 10 {
+    .border-left-#{$i} {
+        border-left: solid 0px + $i;
+    }
+}
+
+/*-- Border All ---*/
+
+@for $i from 0 through 10 {
+    .border-#{$i} {
+        border: solid 0px + $i;
+    }
+}

@@ -1,0 +1,33 @@
+/*-- Width ---*/
+
+@for $i from 0 through 300 {
+    .width-#{$i}px {
+        width: 0px + $i;
+    }
+}
+
+.width-auto {
+    width: auto;
+}
+
+.width-full {
+    width: 100%
+}
+
+/*-- Height ---*/
+
+@for $i from 0 through 600 {
+    .height-#{$i}px {
+        height: 0px + $i !important;
+    }
+}
+
+@for $i from 0 through 500 {
+    .min-height-#{$i}px {
+        height: 0px + $i !important;
+    }
+}
+
+.hight-full {
+    height: 100%;
+}
