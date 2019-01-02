@@ -126,7 +126,8 @@
 
 .recipes-masonry{
     position: relative;
-    height: 2000px;
+    height: auto;
+    min-height: 500px;
     width: 100%;
 }
 

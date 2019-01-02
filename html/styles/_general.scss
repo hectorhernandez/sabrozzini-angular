@@ -1,5 +1,9 @@
 @import 'variables';
 
+.background-white{
+    background-color: $ColorWhite;
+}
+
 .background-light-grey {
     background-color: $colorLightGrey
 }
@@ -146,6 +150,34 @@ body, header {
     }
 }
 
+/*--- Font Weight ---*/
+
+.font-weight-100 {
+    font-weight: 100;
+}
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
 .btn {
     color: $menu-font-color;
     background-color: $background-color;
@@ -166,6 +198,16 @@ body, header {
         background-color: $background-color;
         color: $menu-font-color;
         text-decoration: none;
+    }
+}
+
+.btn-primary-sabrozzini{
+    color: $sabrozzini-secondary-color !important;
+    background-color: $sabrozzini-primary-color;
+    border-color: $sabrozzini-primary-color;
+    &:hover{
+        color: $sabrozzini-primary-color !important;
+        background-color: $sabrozzini-secondary-color;
     }
 }
 
@@ -231,6 +273,17 @@ z-index: 0;
     }
 }
 
+.breadcrumb {
+    background-color: inherit;
+    opacity: 0.5;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+}
+
 .image-container {
     margin: 0 auto;
     display: table !important;
@@ -245,14 +298,8 @@ z-index: 0;
 }
 
 .sidebar {
-    margin-top: 3rem;
-    padding: 0;
-    font-size: 14px;
-    @include media("<990px") {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    background-color: green;
+    min-height: 500px;
 }
 
 .about-section {
@@ -277,3 +324,9 @@ z-index: 0;
     border-bottom: #D32A26 .250em solid;
 }
 
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}

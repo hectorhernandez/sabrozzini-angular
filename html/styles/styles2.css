@@ -1,3 +1,7 @@
+.background-white {
+  background-color: #fff;
+}
+
 .background-light-grey {
   background-color: #FAFAFA;
 }
@@ -2138,6 +2142,35 @@ body, header {
   border-radius: 500px;
 }
 
+/*--- Font Weight ---*/
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
 .btn {
   color: #D32A26;
   background-color: #f5f5f5;
@@ -2161,6 +2194,17 @@ body, header {
   background-color: #f5f5f5;
   color: #D32A26;
   text-decoration: none;
+}
+
+.btn-primary-sabrozzini {
+  color: #f5f5f5 !important;
+  background-color: #D32A26;
+  border-color: #D32A26;
+}
+
+.btn-primary-sabrozzini:hover {
+  color: #D32A26 !important;
+  background-color: #f5f5f5;
 }
 
 .rounded {
@@ -2234,6 +2278,18 @@ body, header {
   }
 }
 
+.breadcrumb {
+  background-color: inherit;
+  opacity: 0.5;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
 .image-container {
   margin: 0 auto;
   display: table !important;
@@ -2248,17 +2304,8 @@ body, header {
 }
 
 .sidebar {
-  margin-top: 3rem;
-  padding: 0;
-  font-size: 14px;
-}
-
-@media (max-width: 989px) {
-  .sidebar {
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  background-color: green;
+  min-height: 500px;
 }
 
 .about-section {
@@ -2281,6 +2328,16 @@ body, header {
 .social-networks {
   margin-top: 2rem;
   border-bottom: #D32A26 .250em solid;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 @font-face {
@@ -2409,7 +2466,8 @@ body, header {
 
 .recipes-masonry {
   position: relative;
-  height: 2000px;
+  height: auto;
+  min-height: 500px;
   width: 100%;
 }
 
@@ -22189,5 +22247,13 @@ body, header {
 
 .hight-full {
   height: 100%;
+}
+
+.author {
+  position: relative;
+}
+
+.author .thumb > a > img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles2.css.map */
